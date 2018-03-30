@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { AfterRoot, AfterData } from '@jaredpalmer/after';
-import { ServerStyleSheet } from 'styled-components'
+import { ServerStyleSheet, injectGlobal } from 'styled-components'
 
 
 export default class Document extends React.Component {
@@ -15,6 +15,7 @@ export default class Document extends React.Component {
   }
 
   render() {
+
     const {
       helmet,
       assets,
@@ -25,6 +26,19 @@ export default class Document extends React.Component {
     // get attributes from React Helmet
     const htmlAttrs = helmet.htmlAttributes.toComponent();
     const bodyAttrs = helmet.bodyAttributes.toComponent();
+
+    injectGlobal `
+      body {
+        margin: 0;
+        font-family: 'Source Sans Pro', Helvetica;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        text-align: left;
+        color: #505558;
+      }
+    `;
+
     return (
       <html {...htmlAttrs}>
         <head>
@@ -35,7 +49,7 @@ export default class Document extends React.Component {
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           <meta name="theme-color" content="#000000" />
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" />
           {helmet.title.toComponent()}
           {helmet.meta.toComponent()}
           {helmet.link.toComponent()}
