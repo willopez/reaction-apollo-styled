@@ -2,11 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink,  } from 'react-router-dom';
 
+import SideUserInfo from './side-user-info';
+
 export default () => {
   const SideMenu = styled.div`
     width: 30%;
-    backgroundh-color: blue;
     float: left;
+    margin-right: 34px;
   `;
 
   const SideMenuItem = styled.li`
@@ -20,16 +22,16 @@ export default () => {
 
     color: #505558;
     text-decoration: none;
-    background-color: #f5f5f5
+    background-color: #f5f5f5;
     padding: 15px 20px;
     margin-bottom: 4px;
     display: block;
     &.${activeClassName} {
       background-color: #ebf7fc;
-    }
   `;
   return (
     <SideMenu>
+      <SideUserInfo />
       <ul>
       <SideMenuItem>
         <Link

@@ -2389,8 +2389,8 @@ eslint-loader@1.9.0:
     rimraf "^2.6.1"
 
 eslint-module-utils@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/eslint-module-utils/-/eslint-module-utils-2.1.1.tgz#abaec824177613b8a95b299639e1b6facf473449"
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-module-utils/-/eslint-module-utils-2.2.0.tgz#b270362cd88b1a48ad308976ce7fa54e98411746"
   dependencies:
     debug "^2.6.8"
     pkg-dir "^1.0.0"
@@ -3250,13 +3250,6 @@ hawk@~6.0.2:
     cryptiles "3.x.x"
     hoek "4.x.x"
     sntp "2.x.x"
-
-hedron@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/hedron/-/hedron-0.7.1.tgz#cd3fe86c680c0fe08c6539368653fb6534a533e1"
-  dependencies:
-    opencollective "^1.0.3"
-    prop-types "^15.5.8"
 
 history@^4.7.2:
   version "4.7.2"
@@ -5568,7 +5561,7 @@ promise@^8.0.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.0, prop-types@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
   dependencies:
@@ -5818,9 +5811,18 @@ react-dev-utils@^4.0.0:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-"react-dom@^15 || ^16", react-dom@^16.2.0:
+"react-dom@^15 || ^16":
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+
+react-dom@^16.3.0:
+  version "16.3.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.3.0.tgz#b318e52184188ecb5c3e81117420cca40618643e"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
@@ -5883,9 +5885,18 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-"react@^15 || ^16", react@^16.2.0:
+"react@^15 || ^16":
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+
+react@^16.3.0:
+  version "16.3.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.3.0.tgz#fc5a01c68f91e9b38e92cf83f7b795ebdca8ddff"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"

@@ -36,7 +36,9 @@ export default class Document extends React.Component {
         letter-spacing: 0.2px;
         text-align: left;
         color: #505558;
+        height: 100%;
       }
+
     `;
 
     return (

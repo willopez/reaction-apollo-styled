@@ -16,8 +16,7 @@ import Layout from '../components/layout';
 const AddressBook = ({ children }) => {
 
   return (
-    <Layout>
-      <h1>Address Book</h1>
+    <Layout title="Address Book">
     </Layout>
   )
 }
