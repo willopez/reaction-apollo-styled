@@ -10,7 +10,7 @@ function createApolloClient({ ssrMode }) {
       uri: 'http://localhost:3000/graphql-alpha',
       credentials: 'same-origin',
       headers: {
-        "meteor-login-token": 'UVlG_13CGxxAp1FA6NdHF6Z31BHb3t4UNfBA0I2Iuvx'
+        "meteor-login-token": 'IOTpAbKOXvLT5VEYRQI6Af9hjNbFDnSGufBhmz2_k8F'
       },
       fetch,
     }),

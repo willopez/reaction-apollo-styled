@@ -1,3 +1,4 @@
+import './polyfill';
 import React from 'react';
 import express from 'express';
 import { render } from '@jaredpalmer/after';
@@ -14,15 +15,8 @@ const server = express();
 server
   .disable('x-powered-by')
   .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
-  .use(function (req, res, next) {
-    global.navigator = {
-      userAgent: req.headers['user-agent']
-    };
-    global.window = {};
-    next();
-  })
   .get('/*', async (req, res) => {
-    const client = createApolloClient({ ssrMode: true });
+    const client = createApolloClient({ ssrMode: false });
 
     const customRenderer = node => {
       const App = <ApolloProvider client={client}>{node}</ApolloProvider>;

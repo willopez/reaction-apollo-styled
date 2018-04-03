@@ -1,7 +1,6 @@
 import React from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
-import Button from '@reactioncommerce/components/dist/components/Button/v1/Button';
 
 import { FieldContainer, FieldLabel , FieldValue } from './styles';
 
@@ -40,7 +39,7 @@ const AccountDetails = ({ viewer }) => {
           Password
         </FieldLabel>
         <FieldValue>
-          &middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;
+          &middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;
         </FieldValue>
       </FieldContainer>
     </React.Fragment>

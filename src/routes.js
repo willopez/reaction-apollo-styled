@@ -1,6 +1,6 @@
 import Index from './pages/index';
-import AddressBook from './pages/address-book';
 import ProfileDetails from './pages/profile';
+import AddressBook from './pages/address-book';
 import Groups from './pages/groups';
 
 export default [
@@ -17,7 +17,7 @@ export default [
   {
     path: '/profile/address-book',
     exact: true,
-    component: AddressBook  
+    component: AddressBook
   },
   {
     path: '/groups',

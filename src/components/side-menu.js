@@ -6,7 +6,7 @@ import SideUserInfo from './side-user-info';
 
 export default () => {
   const SideMenu = styled.div`
-    width: 30%;
+    width: 40%;
     float: left;
     margin-right: 34px;
   `;
